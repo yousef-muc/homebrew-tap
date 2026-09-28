@@ -5,13 +5,13 @@
 class Napctl < Formula
   desc "Local and edge Docker compute orchestrator with wake-on-request"
   homepage "https://github.com/yousef-muc/napctl"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.8/napctl_0.1.8_darwin_amd64.tar.gz"
-      sha256 "184f572ab702d9991f61171d762fbe27f7fc5d38a7dd3f61e4981d3a0b70d551"
+      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.9/napctl_0.1.9_darwin_amd64.tar.gz"
+      sha256 "c6c251b0ffb7a60cdb0c66571c6b1f7a57f710025088b076e8201203e20168b7"
 
       define_method(:install) do
         bin.install "napctl"
@@ -37,8 +37,8 @@ class Napctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.8/napctl_0.1.8_darwin_arm64.tar.gz"
-      sha256 "c5011e337ca4a5ad0422c68e01652f7285637462e1df30a66458e95f113c950f"
+      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.9/napctl_0.1.9_darwin_arm64.tar.gz"
+      sha256 "d2d07300447fb574632087f39309cb28e698e4442b6aa4fd2e14d1f147ea3228"
 
       define_method(:install) do
         bin.install "napctl"
@@ -67,8 +67,8 @@ class Napctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.8/napctl_0.1.8_linux_amd64.tar.gz"
-      sha256 "8814a05c5c91f58e7803321eb1124479362c7253de993e71c11867e2b3f9007a"
+      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.9/napctl_0.1.9_linux_amd64.tar.gz"
+      sha256 "26d80c450c5cc9123104860bb0d04ec076bcd2f022100ca83f7c68d4076a0ea3"
       define_method(:install) do
         bin.install "napctl"
         bin.install "napd"
@@ -93,8 +93,8 @@ class Napctl < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.8/napctl_0.1.8_linux_arm64.tar.gz"
-      sha256 "cd32fa3c80150cdca4f4948351334f41f8196a69e19308d1bfc9e0cda338498f"
+      url "https://github.com/yousef-muc/napctl/releases/download/v0.1.9/napctl_0.1.9_linux_arm64.tar.gz"
+      sha256 "742887c3655924cccfaa337100c2fbcfde994cd96dedbb6c878f1d185ea7313a"
       define_method(:install) do
         bin.install "napctl"
         bin.install "napd"
