@@ -5,21 +5,21 @@
 class Portp2p < Formula
   desc "Secure one-port localhost sharing over libp2p"
   homepage "https://github.com/yousef-muc/portp2p"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.0/portp2p_1.2.0_darwin_amd64.tar.gz"
-      sha256 "655abab0aaf475aa022e15d1a3239332533eed9b2f872d5133424ff94b508a93"
+      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.1/portp2p_1.2.1_darwin_amd64.tar.gz"
+      sha256 "697b4df4f43ec0da0bc6de6cc1fa64eca37ca8d8ac7a54ee5ad91c8b112b6d48"
 
       define_method(:install) do
         bin.install "portp2p"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.0/portp2p_1.2.0_darwin_arm64.tar.gz"
-      sha256 "a990de4578fc98c55a4897fbcfe718d2a49cd034af86f81e522e43b4c3665dac"
+      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.1/portp2p_1.2.1_darwin_arm64.tar.gz"
+      sha256 "c5bca50425166286e0f9d26ea397ffbf10c79baef20f4ca152c1b65366501e8b"
 
       define_method(:install) do
         bin.install "portp2p"
@@ -29,15 +29,15 @@ class Portp2p < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.0/portp2p_1.2.0_linux_amd64.tar.gz"
-      sha256 "41ff937a01096005c0d8931f5b75cac0bbc5d83e9ba612686947d6130332dd35"
+      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.1/portp2p_1.2.1_linux_amd64.tar.gz"
+      sha256 "b705166827d15ee30e55815c4184bf8184225faf39a9a8fc4c7244b18ba8b083"
       define_method(:install) do
         bin.install "portp2p"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.0/portp2p_1.2.0_linux_arm64.tar.gz"
-      sha256 "27f358ee4f2fba3c173137e71f6d852336e034990f8999bf8c5ade9e9da17562"
+      url "https://github.com/yousef-muc/portp2p/releases/download/v1.2.1/portp2p_1.2.1_linux_arm64.tar.gz"
+      sha256 "74e8c71410b281673763f502cd4c88bc61be82aaede9c846e41886e196ff9ea4"
       define_method(:install) do
         bin.install "portp2p"
       end
